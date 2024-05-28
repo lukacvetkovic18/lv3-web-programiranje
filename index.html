@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Web Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="sort-filter-container">
+        <div class="sort-container">
+            <label for="sort-dropdown">Sort By:</label>
+            <select id="sort-dropdown">
+                <option value="name-asc">A-Z</option>
+                <option value="name-desc">Z-A</option>
+                <option value="price-desc">Highest Price</option>
+                <option value="price-asc">Lowest Price</option>
+            </select>
+        </div>
+        <div class="filter-container">
+            <label for="filter-dropdown">Filter by Category:</label>
+            <select id="filter-dropdown">
+                <option value="all">All</option>
+                <option value="fruit">Fruits</option>
+                <option value="vegetable">Vegetables</option>
+            </select>
+        </div>
+    </div>
+    <h1>Fruit and Vegetable Market</h1>
+    <div class="left-container">
+      <div class="cart-container">
+          <img src="assets/shopping-cart.png" alt="Cart" class="cart-button">
+          <span class="cart-badge">0</span>
+      </div>
+      <span class="wallet-amount">Your wallet amount: $100.00</span>
+    </div>
+  </div>
+
+  <div class="items-grid">
+    <!-- Items will be dynamically added here -->
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="cart-title">Cart</h2>
+      <table class="cart-items">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="cart-summary">
+          <p class="total">Total: <span class="cart-total">$0.00</span></p>
+          <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
